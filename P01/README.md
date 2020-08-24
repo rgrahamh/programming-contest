@@ -1,4 +1,3 @@
-<meta charset="utf-8" lang="en">  <!-- this line allows UTF-8 characters in the .html file -->
 # P01_Greedy IPS
 ## Problem Description
 You work for Starmont Inc., a large-scale manufacturer of personal starships. As a feature for a new class of ship that your company is building, your manager has instructed you to make a program for the IPS (Interstellar Positioning System) that can chart the fastest flight path to a specified star system, taking into account the ship's max warp drive range. Knowing that the full capacity of the ship's warp drive (given in the input file) can be expended and recharged in a major system with a space station (also denoted in the input file) as many times as necessary along the way, build an algorithm that charts the shortest possible distance from the current location to the final destination in 3D space (using Cartesian coordinates), returning the star systems in order of visitation and the total traveled distance. Assume that you start out the trip with a fully charged warp drive.
@@ -74,38 +73,3 @@ No Valid Route
 ```
 
 *System naming credit goes to the Day Quadrant of the Vega Sector in Wing Commander; coordinates are accurate to the games.*
-
-<!-- ****************************** -->
-<!--    Leave the content below     -->
-<!-- ****************************** -->
-
-<!-- The script and style below are added for clarity and to workaround a bug -->
-<script>
-    // this is a hack to workaround a bug in Markdeep+Mathjax, where
-    // `&#36;`` is automatically converted to `\(`` and `\)`` too soon.
-    // the following code will replace the innerHTML of all elements
-    // with class "dollar" with a dollar sign.
-    setTimeout(function() {
-        var dollars = document.getElementsByClassName('dollar');
-        for(var i = 0; i < dollars.length; i++) {
-            dollars[i].innerHTML = '&#' + '36;'; // split to prevent conversion to $
-        }
-    }, 1000);
-</script>
-<style>
-    /* adding some styling to <code> tags (but not <pre><code> coding blocks!) */
-    :not(pre) > code {
-        background-color: rgba(0,0,0,0.05);
-        outline: 1px solid rgba(0,0,0,0.15);
-        margin-left: 0.25em;
-        margin-right: 0.25em;
-    }
-    /* fixes table of contents of medium-length document from looking weird if admonitions are behind */
-    .md div.mediumTOC { background: white; }
-    .md div.admonition { position: initial !important; }
-</style>
-
-<!--   Leave the following Markdeep formatting code, as this will format your text above to look nice in a wed browser   -->
-<style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style>
-<script src="https://casual-effects.com/markdeep/latest/markdeep.min.js"></script>
-<script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible");</script>
